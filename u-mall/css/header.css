@@ -1,0 +1,159 @@
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+
+.m-w100 {
+    min-width: 1190px;
+}
+
+.c-ef6300 {
+    color: #ef6300;
+}
+
+.top {
+    height: 35px;
+    background: #f5f5f5;
+    border-bottom: 2px solid #f3f3f3;
+    overflow: hidden;
+}
+
+.top .w {
+    height: 35px;
+    font-size: 12px;
+    color: #6a6880;
+}
+
+.top .fl {
+    margin-left: 10px;
+}
+
+.top li i {
+    font-size: 10px;
+    padding: 0 3px 0 3px;
+    color: #d8d8d8;
+}
+
+.top .icon-weizhi {
+    color: #ef9700;
+}
+
+.top .icon-xiajiantou {
+    color: #b8b8b8;
+}
+
+.top .c-ef6300 {
+    color: #ef6300;
+}
+
+.top .fl li {
+    float: left;
+    line-height: 35px;
+    margin-right: 15px;
+}
+
+.top .fr li {
+    float: left;
+    line-height: 35px;
+    margin-right: 15px;
+}
+
+.header .w {
+    height: 110px;
+    /* background: purple; */
+    position: relative;
+}
+
+.header .w h1 {
+    line-height: 110px;
+}
+
+.header .search {
+    width: 536px;
+    height: 36px;
+    background: white;
+    border: 2px solid #ee6e17;
+    position: absolute;
+    left: 361px;
+    top: 30px;
+    line-height: 36px;
+}
+
+.header .search>i.fl {
+    width: 18px;
+    margin-left: 10px;
+}
+
+.header .search>input.fl {
+    border: none;
+    height: 36px;
+    width: 385px;
+    font-size: 15px;
+    padding-left: 5px;
+}
+
+.header .search>div.fr {
+    width: 118px;
+    background: #ee6e17;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+
+.header .w ul {
+    position: absolute;
+    top: 45px;
+    left: -10px;
+}
+
+.header .w ul li {
+    float: left;
+    line-height: 12px;
+    border-right: 1px solid #d9d9d9;
+}
+
+.header .w ul li:last-child {
+    border-right: none;
+}
+
+.header .w ul a {
+    color: #848c97;
+    padding: 0 10px;
+}
+
+.banner-main .w {
+    height: 38px;
+    /* background: yellow; */
+}
+
+.banner-main .shop-class {
+    width: 190px;
+    height: 38px;
+    background: #f26b11;
+    color: white;
+    font-size: 13px;
+    display: inline-block;
+}
+
+.banner-main .shop-class i {
+    display: inline-block;
+    margin-top: 14px;
+    margin-left: 9px;
+    vertical-align: -2px;
+}
+
+.banner-main ul {
+    display: inline-block;
+    margin-left: 23px;
+}
+
+.banner-main ul li {
+    float: left;
+    margin-right: 26px;
+    font-size: 13px;
+    font-weight: bold;
+}

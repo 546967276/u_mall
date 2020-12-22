@@ -1,0 +1,102 @@
+.w {
+  width: 7.05rem;
+  margin: 0 auto;
+}
+@media screen and (width: 320px) {
+  .scale_9 {
+    transform-origin: 0;
+    transform: scale(0.9);
+  }
+  .scale_8 {
+    transform-origin: 0;
+    transform: scale(0.8);
+  }
+  .scale_7 {
+    transform-origin: 0;
+    transform: scale(0.7);
+  }
+  .w100 {
+    width: 7.5rem;
+  }
+}
+.container {
+  width: 7.5rem;
+  background: #fff;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-bottom: 1.2rem;
+  margin-top: 0.88rem;
+}
+.header {
+  background: #f26b11;
+  width: 7.5rem;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: calc((100% - 7.5rem) / 2);
+  z-index: 100;
+}
+.header .w {
+  height: 0.88rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .w i {
+  display: block;
+  width: 0px;
+  height: 0px;
+  border: transparent solid 0.13rem;
+  border-right: white solid 0.13rem;
+  position: relative;
+}
+.header .w i::after {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 0px;
+  border: transparent solid 0.13rem;
+  border-right: #f26b11 solid 0.13rem;
+  position: absolute;
+  left: -0.09rem;
+  top: -0.13rem;
+}
+.header .w > span {
+  margin-right: -0.5rem;
+  font-size: 0.33rem;
+  color: #fff;
+}
+.header .w > div span {
+  display: inline-block;
+  width: 0.11rem;
+  height: 0.11rem;
+  border-radius: 50%;
+  background: #fff;
+}
+.header .w > div span:nth-of-type(n+2) {
+  margin-left: 0.1rem;
+}
+.public-footer {
+  background-color: #fff;
+  padding: 0 0.5rem;
+  width: 6.5rem;
+  height: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  border-top: 1px solid #ebebeb;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3.75rem;
+  font-size: 0.2rem;
+}
+.public-footer img {
+  width: 0.52rem;
+  height: 0.52rem;
+}
+.public-footer p {
+  margin-top: 0.13rem;
+  color: #939393;
+}

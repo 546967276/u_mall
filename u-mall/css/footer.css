@@ -1,0 +1,52 @@
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.footer {
+    background: #333333;
+}
+
+.footer .w {
+    height: 342px;
+    background: #333333;
+}
+
+.footer .sale-after {
+    height: 240px;
+    border-bottom: 1px solid #3f3f3f;
+    color: #a0a0a0;
+    overflow: hidden;
+}
+
+.footer .sale-after dl {
+    /* margin-top: 32px;
+  margin-left: 174px; */
+    margin: 32px 0 0 109px;
+    float: left;
+}
+
+.footer .sale-after dl:first-child {
+    margin-left: 174px;
+}
+
+.footer .sale-after dt {
+    font-size: 18px;
+    margin-bottom: 24px;
+}
+
+.footer .sale-after dd {
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.footer .text {
+    color: #626262;
+    font-size: 13px;
+    text-align: center;
+    line-height: 27px;
+    margin-top: 37px;
+}

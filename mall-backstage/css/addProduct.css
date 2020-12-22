@@ -1,0 +1,254 @@
+html,
+body {
+  width: 100%;
+  font-size: 12px;
+}
+.container {
+  width: 100%;
+  background: #ececec;
+}
+.w {
+  max-width: 1360px;
+  margin: 0 auto;
+  width: 100%;
+}
+.title {
+  height: 61px;
+  line-height: 61px;
+  width: 100%;
+  background: #e9967a;
+}
+.title h2 {
+  width: 218px;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+}
+.w h3 {
+  font-size: 20px;
+  margin-top: 30px;
+}
+.form-w {
+  width: 97%;
+  margin: 0 auto;
+}
+.form input {
+  width: 100px;
+  border: 1px solid #cccccc;
+  margin: 0;
+  padding: 0;
+}
+.form label {
+  display: inline-block;
+  width: 90px;
+}
+.form p {
+  margin-top: 30px;
+  font-size: 16px;
+}
+.form .price {
+  display: flex;
+}
+.form .rect {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.form .rect input {
+  width: 727px;
+  height: 30px;
+  padding-left: 15px;
+}
+.form .rect i {
+  color: red;
+}
+.form .pro-class {
+  display: flex;
+  align-items: center;
+}
+.form .pro-class i:first-child {
+  color: red;
+}
+.form .pro-class .checkbox {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+}
+.form .pro-class span {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #d5d5d5;
+  line-height: 30px;
+  padding: 0 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+.form .pro-class .btn {
+  width: 74px;
+  height: 33px;
+  margin-left: 6px;
+  background: #438eb9;
+  color: #fff;
+  border-radius: 5px;
+}
+.form .price {
+  margin-top: 40px;
+}
+.form .price p {
+  margin: 0;
+  display: flex;
+  align-items: baseline;
+}
+.form .price i:first-child {
+  color: red;
+}
+.form .price input {
+  width: 155px;
+  height: 26px;
+  margin-top: 10px;
+}
+.form .price span {
+  margin-right: 128px;
+}
+.form .set-rule {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.form .set-rule input {
+  width: 80%;
+  height: 30px;
+  margin-left: 14px;
+}
+.form .set-rule span {
+  font-size: 13px;
+  color: #333;
+  margin-left: 10px;
+}
+.form .confirm {
+  display: flex;
+}
+.form .confirm input {
+  width: 16px;
+  margin-right: 6px;
+}
+.form .confirm span {
+  margin-right: 39px;
+}
+.form .pro-img {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.form .pro-img i {
+  color: red;
+}
+.form .pro-img span {
+  font-size: 12px;
+  margin-left: 6px;
+}
+.form .pro-img input {
+  width: 67px;
+  height: 21px;
+  border: 1px solid #767675;
+  border-radius: 3px;
+}
+.form .text-descript {
+  display: flex;
+}
+.form .text-descript i {
+  color: red;
+}
+.form .text-descript label {
+  margin-top: 5px;
+}
+.form .text-descript textarea {
+  width: calc(100% - 90px);
+  outline: none;
+  border: none;
+  border: 1px solid lightblue;
+}
+.form .submit-btn {
+  text-align: center;
+  height: 94px;
+  line-height: 94px;
+}
+.form .submit-btn input {
+  width: 86px;
+  height: 33px;
+  color: #fff;
+  border-radius: 5px;
+}
+.form .submit-btn input:nth-of-type(1) {
+  background: #438eb9;
+}
+.form .submit-btn input:nth-of-type(2) {
+  background: #e9967a;
+}
+.form .submit-btn input:nth-of-type(3) {
+  background: #bbbbbb;
+}
+@media screen and (max-width: 1360px) {
+  .w {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .w h3 {
+    font-weight: bold;
+    margin-left: 40px;
+  }
+  .form-w {
+    width: 90%;
+  }
+  .form .rect {
+    flex-direction: column;
+  }
+  .form .rect label {
+    align-self: flex-start;
+  }
+  .form .rect input {
+    align-self: flex-start;
+    width: 90%;
+    margin-top: 10px;
+  }
+  .form .pro-class {
+    flex-direction: column;
+  }
+  .form .pro-class label {
+    align-self: flex-start;
+    margin-top: 27px;
+  }
+  .form .pro-class span {
+    align-self: flex-start;
+    margin-top: 20px;
+  }
+  .form .pro-class .btn {
+    position: relative;
+    top: -138px;
+  }
+  .form .price {
+    flex-direction: column;
+  }
+  .form .price p {
+    margin-top: 10px;
+  }
+  .form .set-rule {
+    flex-direction: column;
+  }
+  .form .set-rule label {
+    align-self: flex-start;
+  }
+  .form .set-rule input {
+    align-self: flex-start;
+    margin-left: 0 ;
+    width: 90%;
+    margin: 10px 0;
+  }
+  .form .set-rule span {
+    align-self: flex-start;
+  }
+  .form .text-descript textarea {
+    width: 70%;
+  }
+}

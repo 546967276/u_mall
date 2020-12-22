@@ -1,0 +1,92 @@
+@import 'reset.less';
+@import 'public.less';
+@w            : 7.05rem;
+@bpx-max-width: 7.5rem;
+@color-5d5d5d: #5d5d5d;
+@main-orange  : #f26b11;
+@detail-red:#e12f45;
+@title-color: #454545;
+.container{
+    padding: 0;
+}
+.class_list{
+    display: flex;
+    position: relative;
+    .left{  
+        width: 1.63rem;
+        // height: 100vh;
+        height: calc(100vh - @my-height);
+        // background: yellow;
+        border-right: 1px solid #d9d9d9;
+        overflow: auto;
+        li{
+            font-size: .26rem;
+            line-height: .52rem;
+            margin: .36rem  0;
+            a{
+                padding-left: .39rem;
+                border-left: .08rem solid transparent;
+                color: #676767;
+                &:hover{
+                    border-left: .08rem solid @main-orange;
+                    color: @main-orange;
+                }
+
+            }
+            &:first-of-type{
+                margin-top: .38rem;
+            }
+
+            
+        }
+    }
+
+
+    .right{
+        height: calc(100vh - @my-height);
+        width: calc(100% - 1.63rem);
+        overflow: auto;
+        // background: red;
+        .class_list_w{
+            width: 5.27rem;
+            margin: 0 auto;
+            .title{
+                height: .87rem;
+                display: flex;
+                justify-content: space-between;
+                font-size: .26rem;
+                color: @title-color;
+                align-items: flex-end;
+                margin-bottom: .48rem;
+                a{
+                    color: @title-color;
+                }
+            }
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                height: 4.24rem;
+                align-content: space-between;
+                padding-bottom: 1.13rem - .87rem ;
+                li{
+                    width: 1.39rem;
+                    height: 2rem;
+                    font-size: .23rem;
+                   img{
+                       width: 1.3rem;
+                       height: 1.46rem;
+                       margin-bottom: .24rem;
+                   }
+                   a{
+                      color: #888888;
+             
+                   }
+         
+                }
+            }
+          
+        }
+
+    }
+}

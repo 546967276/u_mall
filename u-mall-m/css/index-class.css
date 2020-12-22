@@ -1,0 +1,247 @@
+body {
+  margin: 0;
+  font: 12px/1 "Microsoft YaHei", Tahoma, Arial, Helvetica, sans-serif;
+  color: #333;
+}
+p,
+dl,
+dd,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: normal;
+}
+ul,
+li,
+ol {
+  list-style: none;
+}
+input {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+td {
+  padding: 0;
+}
+img {
+  border: none;
+  vertical-align: middle;
+}
+button,
+input,
+textarea {
+  margin: 0;
+  padding: 0;
+  background: none;
+  font-family: inherit;
+  vertical-align: middle;
+  outline: none;
+  /* 去掉输入框点击时出现的轮廓框 */
+}
+a {
+  text-decoration: none;
+  color: #333333;
+}
+i,
+em {
+  font-style: normal;
+}
+b,
+strong {
+  font-weight: normal;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+.w {
+  width: 7.05rem;
+  margin: 0 auto;
+}
+@media screen and (width: 320px) {
+  .scale_9 {
+    transform-origin: 0;
+    transform: scale(0.9);
+  }
+  .scale_8 {
+    transform-origin: 0;
+    transform: scale(0.8);
+  }
+  .scale_7 {
+    transform-origin: 0;
+    transform: scale(0.7);
+  }
+  .w100 {
+    width: 7.5rem;
+  }
+}
+.container {
+  width: 7.5rem;
+  background: #fff;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-bottom: 1.2rem;
+  margin-top: 0.88rem;
+}
+.header {
+  background: #f26b11;
+  width: 7.5rem;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: calc((100vw - 7.5rem) / 2);
+  z-index: 100;
+}
+.header .w {
+  height: 0.88rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .w i {
+  display: block;
+  width: 0px;
+  height: 0px;
+  border: transparent solid 0.13rem;
+  border-right: white solid 0.13rem;
+  position: relative;
+}
+.header .w i::after {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 0px;
+  border: transparent solid 0.13rem;
+  border-right: #f26b11 solid 0.13rem;
+  position: absolute;
+  left: -0.09rem;
+  top: -0.13rem;
+}
+.header .w > span {
+  margin-right: -0.5rem;
+  font-size: 0.33rem;
+  color: #fff;
+}
+.header .w > div span {
+  display: inline-block;
+  width: 0.11rem;
+  height: 0.11rem;
+  border-radius: 50%;
+  background: #fff;
+}
+.header .w > div span:nth-of-type(n+2) {
+  margin-left: 0.1rem;
+}
+.public-footer {
+  background-color: #fff;
+  padding: 0 0.5rem;
+  width: 6.5rem;
+  height: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  border-top: 1px solid #ebebeb;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3.75rem;
+  font-size: 0.2rem;
+}
+.public-footer img {
+  width: 0.52rem;
+  height: 0.52rem;
+}
+.public-footer p {
+  margin-top: 0.13rem;
+  color: #939393;
+}
+.container {
+  padding: 0;
+}
+.class_list {
+  display: flex;
+  position: relative;
+}
+.class_list .left {
+  width: 1.63rem;
+  height: calc(100vh - 1.2rem);
+  border-right: 1px solid #d9d9d9;
+  overflow: auto;
+}
+.class_list .left li {
+  font-size: 0.26rem;
+  line-height: 0.52rem;
+  margin: 0.36rem 0;
+}
+.class_list .left li a {
+  padding-left: 0.39rem;
+  border-left: 0.08rem solid transparent;
+  color: #676767;
+}
+.class_list .left li a:hover {
+  border-left: 0.08rem solid #f26b11;
+  color: #f26b11;
+}
+.class_list .left li:first-of-type {
+  margin-top: 0.38rem;
+}
+.class_list .right {
+  height: calc(100vh - 1.2rem);
+  width: calc(100% - 1.63rem);
+  overflow: auto;
+}
+.class_list .right .class_list_w {
+  width: 5.27rem;
+  margin: 0 auto;
+}
+.class_list .right .class_list_w .title {
+  height: 0.87rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.26rem;
+  color: #454545;
+  align-items: flex-end;
+  margin-bottom: 0.48rem;
+}
+.class_list .right .class_list_w .title a {
+  color: #454545;
+}
+.class_list .right .class_list_w ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 4.24rem;
+  align-content: space-between;
+  padding-bottom: 0.26rem;
+}
+.class_list .right .class_list_w ul li {
+  width: 1.39rem;
+  height: 2rem;
+  font-size: 0.23rem;
+}
+.class_list .right .class_list_w ul li img {
+  width: 1.3rem;
+  height: 1.46rem;
+  margin-bottom: 0.24rem;
+}
+.class_list .right .class_list_w ul li a {
+  color: #888888;
+}

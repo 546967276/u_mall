@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品信息管理</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index_information.css">
+    <link rel="stylesheet" href="./css/iconfont/iconfont.css">
+    <script src="./js/vue-2.4.0.js"></script>
+</head>
+
+<body>
+    <div id='container' class="container">
+        <div class="w">
+            <div class="title">
+                <div class="left">
+                    <h2>小u商城后台管理系统</h2>
+                    <div class="nav-img" @click="show_nav()">
+                        <i class="iconfont icon-caidan"></i>
+                    </div>
+                </div>
+                <div class="right">
+
+                    <img class="head-img" src="./images/index_/person.png" alt="">
+                    <span class="name">周杰伦</span>
+                    <i class="iconfont icon-zhuxiaologout10"></i>
+                    <span class="loginout">恢复</span>
+
+                </div>
+            </div>
+
+            <div class="main">
+                <div class="left-nav">
+                    <ul>
+                        <li class="active"><i class="iconfont icon-shangpin"><b>商品管理</b> </i>
+                            <ul>
+                                <li class="current"><i class="iconfont icon-shangpin icon-fuzhiziji"></i>商品信息管理</li>
+                                <li v-for='n in 2'><i class="iconfont icon-shangpin icon-fuzhiziji"></i>商品信息管理</li>
+                            </ul>
+                        </li>
+
+                        <li><i class="iconfont  icon-6"><b>商品管理</b></i>
+                            <ul>
+                                <li v-for='n in 3'><i class="iconfont icon-shangpin icon-fuzhiziji"></i>商品信息管理</li>
+                            </ul>
+                        </li>
+
+                        <li><i class="iconfont icon-yonghu"><b>商品管理</b></i>
+                            <ul>
+                                <li v-for='n in 3'><i class="iconfont icon-shangpin icon-fuzhiziji"></i>商品信息管理</li>
+                            </ul>
+                        </li>
+
+                        <li><i class="iconfont icon-guanliyuan1"><b>商品管理</b></i>
+                            <ul>
+                                <li v-for='n in 3'><i class="iconfont icon-shangpin icon-fuzhiziji"></i>商品信息管理</li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+
+                </div>
+                <div class="right-list">
+                 
+                        <div class="head">
+                            <h3>商品信息管理</h3>
+                            <!-- <div>
+                                <span>操作</span>
+                                <i class="iconfont icon-xialajiantou"></i>
+                            </div> -->
+                        </div>
+                        <div class="ctrl right-list-w">
+                            <div class="left">
+                                <input type="button" value="添加">
+                                <input type="button" value="修改">
+                                <input type="button" value="删除">
+                                <input type="button" value="刷新">
+                            </div>
+                            <div class="right">
+                                <span>商品名称 : </span>
+                                <input class="rect" type="text">
+                                <input class="select" type="button" value="查询">
+                            </div>
+                        </div>
+                        <div class="pro-list right-list-w">
+                            <table>
+                                <tr>
+                                    <th>
+                                        <input type="checkbox">
+                                    </th>
+                                    <th>商品ID</th>
+                                    <th>名称</th>
+                                    <th>价格</th>
+                                    <th>一级分类</th>
+                                    <th>二级分类</th>
+                                    <th>三级分类</th>
+                                    <th>状态</th>
+                                </tr>
+                                <tr v-for='n in 14'>
+                                    <td>  <input type="checkbox"></td>
+                                    <td>1</td>
+                                    <td>华为mate9</td>
+                                    <td>3020</td>
+                                    <td>数码</td>
+                                    <td>手机</td>
+                                    <td>国产手机</td>
+                                    <td>申请中</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+         
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <script>
+
+        var app = new Vue({
+            el: "#container",
+            data: {
+                left_nav: null
+            },
+            methods: {
+                show_nav() {
+                    console.log(this.left_nav);
+                    if (this.left_nav != null) {
+                        this.hidden_nav();
+                    }
+                    else {
+                        this.left_nav = document.getElementsByClassName('left-nav')[0];
+                        this.left_nav.style.display = 'block';
+                    }
+                },
+                hidden_nav() {
+                    this.left_nav.style.display = 'none';
+                    this.left_nav = null;
+                }
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>

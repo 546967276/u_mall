@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/iconfont/iconfont.css">
+    <script src="./js/vue-2.4.0.js"></script>
+</head>
+
+<body>
+    <div id='container' class="container">
+        <div class="w">
+            <div class="title">
+                <div class="left">
+                    <h2>小u商城后台管理系统</h2>
+                    <div class="nav-img" @click="show_nav()">
+                        <i class="iconfont icon-caidan"></i>
+                    </div>
+                </div>
+                <div class="right">
+
+                    <img class="head-img" src="./images/index_/person.png" alt="">
+                    <span class="name">周杰伦</span>
+                    <i class="iconfont icon-zhuxiaologout10"></i>
+                    <span class="loginout">恢复</span>
+
+                </div>
+            </div>
+
+            <div class="main">
+                <div class="left-nav">
+                    <ul>
+                        <li class="active"><i class="iconfont icon-shangpin"><b>商品管理</b> </i>
+                            <ul>
+                                <li class="current"><i class="iconfont icon-shangpin icon-fuzhiziji"></i>商品信息管理</li>
+                                <li v-for='n in 2'><i class="iconfont icon-shangpin icon-fuzhiziji"></i>商品信息管理</li>
+                            </ul>
+                        </li>
+
+                        <li><i class="iconfont  icon-6"><b>商品管理</b></i>
+                            <ul>
+                                <li v-for='n in 3'><i class="iconfont icon-shangpin icon-fuzhiziji"></i>商品信息管理</li>
+                            </ul>
+                        </li>
+
+                        <li><i class="iconfont icon-yonghu"><b>商品管理</b></i>
+                            <ul>
+                                <li v-for='n in 3'><i class="iconfont icon-shangpin icon-fuzhiziji"></i>商品信息管理</li>
+                            </ul>
+                        </li>
+
+                        <li><i class="iconfont icon-guanliyuan1"><b>商品管理</b></i>
+                            <ul>
+                                <li v-for='n in 3'><i class="iconfont icon-shangpin icon-fuzhiziji"></i>商品信息管理</li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+
+                </div>
+                <div class="right-list">
+                    <div class="head">
+                        <h3>商品信息管理</h3>
+                        <div>
+                            <span>操作</span>
+                            <i class="iconfont icon-xialajiantou"></i>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li>
+                                <b>150</b>
+                                <p>新订单</p>
+                                <span>详细介绍<i class="iconfont icon-icon-"></i> </span>
+                            </li>
+                            <li>
+                                <b>79</b>
+                                <p>新订单</p>
+                                <span>详细介绍<i class="iconfont icon-icon-"></i> </span>
+                            </li>
+                            <li>
+                                <b>1000</b>
+                                <p>新订单</p>
+                                <span>详细介绍<i class="iconfont icon-icon-"></i> </span>
+                            </li>
+                            <li>
+                                <b>109999</b>
+                                <p>新订单</p>
+                                <span>详细介绍<i class="iconfont icon-icon-"></i> </span>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <script>
+
+        var app = new Vue({
+            el: "#container",
+            data: {
+                left_nav: null
+            },
+            methods: {
+                show_nav() {
+                    console.log(this.left_nav);
+                    if (this.left_nav != null) {
+                        this.hidden_nav();
+                    }
+                    else {
+                        this.left_nav = document.getElementsByClassName('left-nav')[0];
+                        this.left_nav.style.display = 'block';
+                    }
+                },
+                hidden_nav() {
+                    this.left_nav.style.display = 'none';
+                    this.left_nav = null;
+                }
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>

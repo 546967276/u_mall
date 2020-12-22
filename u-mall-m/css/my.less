@@ -1,0 +1,166 @@
+@import 'reset.less';
+@import 'public.less';
+@color-ff2b66 : #ff2b66;
+@color-b5b5b5 : #b5b5b5;
+@main-red     : #fc2b6d;
+@main-orange  : #f26b11;
+
+.w{
+    width: 7.05rem;
+    border: none;
+}
+
+.container{
+    // background: @main-orange;
+    padding: 0;
+    background: #f1f1f1;
+}
+.user_id{
+    height: 2.06rem;
+    background: @main-orange;
+    overflow: hidden;
+    // margin-top: .28rem;
+    .w{
+        >div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: .28rem;
+            .img{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                img{
+                    width: 1.43rem;
+                    width: 1.43rem;
+                    border-radius: 50%;
+                    border: 0.04rem solid #fff;
+                    margin-left: .1rem;
+                    margin-right: .2rem;
+                }
+                p{
+                    line-height: .5rem;
+                    &:first-of-type{
+                        font-size: .3rem;
+                        color: #fff;
+                    }
+                    &:last-of-type{
+                        font-size: .2rem;
+                        color: #000;
+                        font-style: italic;
+                    }
+                }
+            }
+
+            .btn{
+            width: 1.6rem;
+            height: .71rem;
+            line-height:.71rem;
+            background: #fff;
+            font-size: .26rem;
+            color: @main-orange;
+            text-align: center;
+            border-radius: 0.03rem;
+            margin-right: .16rem;
+            }
+        }
+
+    }
+}
+.ctrl_class{
+    background: #fff;
+    .w{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        height: 1.42rem;
+        align-items: center;
+        a{
+            font-size: .22rem;
+            img{
+                width: .38rem;
+                height: .35rem;
+            }
+            &:first-of-type{
+                margin-left: .28rem;
+            }
+            &:last-of-type{
+                margin-right: .42rem;
+            }
+            p{
+                margin-top: .22rem;
+            }
+        }
+    }
+
+}
+.list{
+    background: #fff;
+    padding-bottom: @my-height;
+    margin-top: .21rem;
+    ul{
+        
+
+        li{
+            height: 1.12rem;
+            border-bottom: 1px solid #d9d9d9;
+            display: flex;
+            align-items: center;
+
+            img{
+                width: .46rem;
+                height: .46rem;
+            }
+            .left{
+                display: flex;
+                align-items: center;
+                margin-left: .36rem;
+                span{
+                    margin-left: .28rem;
+                }
+            
+            }
+            .right{
+                span{
+                    color: @main-orange;
+                    margin-right: .2rem;
+                }
+            }
+            a{
+                display: flex;
+                justify-content: space-between;
+                font-size: 0;
+                width: 100%;
+                span{
+                    font-size: .26rem;
+                }
+            }
+
+            i{
+                display: inline-block;
+                width  : 0px;
+                height : 0px;
+                border : transparent solid 0.13rem;
+                border-left:  @color-b5b5b5 solid 0.13rem;
+                position: relative;
+                z-index: 0;
+                margin-right: .37rem;
+                margin-top: .05rem;
+            }
+    
+            i::after{
+                content: '';
+                display: block;
+                width  : 0px;
+                height : 0px;
+                border : transparent solid 0.13rem;
+                border-left: #fff solid 0.13rem;
+                position: absolute;
+                left: -0.16rem;
+                top: -0.13rem;
+                z-index: 1;
+       
+            }
+        }
+    }
+}

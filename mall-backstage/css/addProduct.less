@@ -1,0 +1,335 @@
+@color-red1: #e9967a;
+
+html,
+body {
+    width    : 100%;
+    // height: 100%;
+    font-size: 12px;
+}
+
+.container {
+    width     : 100%;
+    // height: 100%;
+    background: #ececec;
+}
+
+.w {
+    max-width    : 1360px;
+    // background: red;
+    margin       : 0 auto;
+    width        : 100%;
+}
+
+.title {
+    height     : 61px;
+    line-height: 61px;
+    width      : 100%;
+    background : @color-red1;
+
+    h2 {
+        width     : 218px;
+        font-size : 18px;
+        color     : #fff;
+        text-align: center;
+    }
+
+}
+
+.w {
+    h3 {
+        font-size : 20px;
+        margin-top: 30px;
+    }
+}
+
+.form-w {
+    width : 97%;
+    margin: 0 auto;
+}
+
+.form {
+
+    input {
+        width  : 100px;
+        border : 1px solid #cccccc;
+        margin : 0;
+        padding: 0;
+    }
+
+    label {
+        display: inline-block;
+        width  : 90px;
+    }
+
+    p {
+        margin-top: 30px;
+        font-size : 16px;
+    }
+
+    .price {
+        display: flex;
+    }
+
+    .rect {
+        display    : flex;
+        align-items: center;
+        flex-wrap  : nowrap;
+
+        input {
+            width       : 727px;
+            height      : 30px;
+            padding-left: 15px;
+        }
+
+
+
+        i {
+            color: red;
+        }
+    }
+
+    .pro-class {
+        display    : flex;
+        align-items: center;
+
+        i:first-child {
+            color: red;
+        }
+
+        .checkbox {
+            width       : 16px;
+            height      : 16px;
+            margin-right: 6px;
+        }
+
+        span {
+            display      : inline-flex;
+            align-items  : center;
+            border       : 1px solid #d5d5d5;
+            line-height  : 30px;
+            padding      : 0 10px;
+            border-radius: 5px;
+            margin-right : 5px;
+        }
+
+        .btn {
+            width        : 74px;
+            height       : 33px;
+            margin-left  : 6px;
+            background   : #438eb9;
+            color        : #fff;
+            border-radius: 5px;
+        }
+    }
+
+    .price {
+        margin-top: 40px;
+
+        p {
+            margin     : 0;
+            display    : flex;
+            align-items: baseline;
+        }
+
+        i:first-child {
+            color: red;
+        }
+
+        input {
+            width     : 155px;
+            height    : 26px;
+            margin-top: 10px;
+        }
+
+        span {
+            margin-right: 128px;
+        }
+
+    }
+
+    .set-rule {
+        display    : flex;
+        flex-wrap  : nowrap;
+        align-items: center;
+
+        input {
+            width      : 80%;
+            height     : 30px;
+            margin-left: 14px;
+        }
+
+        span {
+            font-size: 13px;
+            color    : #333;
+            margin-left: 10px;
+        }
+    }
+
+    .confirm {
+        display: flex;
+
+        input {
+            width       : 16px;
+            margin-right: 6px;
+        }
+
+        span {
+            margin-right: 39px;
+        }
+
+
+    }
+
+    .pro-img {
+        display    : flex;
+        align-items: center;
+        flex-wrap  : nowrap;
+
+        i {
+            color: red;
+        }
+
+        span {
+            font-size  : 12px;
+            margin-left: 6px;
+        }
+
+        input {
+            width        : 67px;
+            height       : 21px;
+            border       : 1px solid #767675;
+            border-radius: 3px;
+        }
+    }
+
+    .text-descript {
+        display: flex;
+
+        i {
+            color: red;
+        }
+
+        label {
+            margin-top: 5px;
+        }
+
+        textarea {
+            width: calc(100% - 90px);
+            outline: none;
+            border: none;
+            border: 1px solid lightblue;
+        }
+    }
+
+    .submit-btn {
+        text-align : center;
+        height     : 94px;
+        line-height: 94px;
+
+        input {
+            width : 86px;
+            height: 33px;
+            color : #fff;
+
+            &:nth-of-type(1) {
+                background: #438eb9;
+            }
+
+            &:nth-of-type(2) {
+                background: #e9967a;
+            }
+
+            &:nth-of-type(3) {
+                background: #bbbbbb;
+            }
+
+            border-radius: 5px;
+        }
+    }
+}
+
+
+@media screen and (max-width:1360px) {
+    .w {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:992px) {}
+
+@media screen and (max-width:768px) {
+    .w {
+        h3 {
+            font-weight: bold;
+            margin-left: 40px;
+        }
+    }
+    .form-w {
+    width: 90%;
+    }
+    .form {
+
+        .rect {
+            flex-direction: column;
+            
+            label{
+                align-self: flex-start;
+            }
+            input {
+                align-self: flex-start;
+                width: 90%;
+                margin-top: 10px;
+            }
+        }
+        .pro-class{
+            flex-direction: column;
+            label{
+                align-self: flex-start;
+                margin-top: 27px;
+            }
+            span{
+                align-self: flex-start;
+                margin-top: 20px;
+            }
+            .btn{
+                position: relative;
+                top: -138px;
+               
+            }
+        }
+        .price {
+            flex-direction: column;
+            p {
+                margin-top: 10px;
+            }
+   
+            input {
+                
+            }
+            span {
+            }
+        }
+    
+        .set-rule {
+            flex-direction: column;
+            label{
+                align-self: flex-start;
+            }
+            input{
+                align-self: flex-start;
+                margin-left: 0 ;
+                width: 90%;
+                margin: 10px 0;
+            }
+            span{
+                align-self: flex-start;
+            }
+        }
+        .text-descript{
+            textarea{
+                width: 70%;
+            }
+        }
+    }
+    
+}

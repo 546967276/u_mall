@@ -1,0 +1,272 @@
+.w {
+    width: 1190px;
+    margin: 0 auto;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.selectorLine{
+    border-top: 1px #ed6d12 solid;
+
+}
+.selectorLine .title{
+    height: 37px;
+    padding: 20px 0 15px 0;
+}
+.selectorLine .title>div{
+    float: left;
+
+}
+.selectorLine .title i{
+    float: left;
+    padding: 0 6px;
+    line-height: 22px;
+}
+.selectorLine .title a{
+    line-height: 22px;
+}
+.lastselector{
+    border: 1px dashed #fec6a5;
+
+}
+.lastselector a{
+    color: #de6b10;
+    padding: 0 6px;
+}
+.selecttable .sname{
+    width: 117px;
+    background: #fcf7f4;
+}
+.selecttable i{
+    display: inline-block;
+    transform: scale(0.6);
+    vertical-align: -1px;
+    color: #e0b39c;
+}
+.selecttable .sname i{
+    margin-left: 20px;
+}
+.selectorLine .selecttable td{
+    border: 1px solid #eeedeb;
+    border-left:none;
+}
+.selectorLine .selecttable ul li{
+    float: left;
+}
+.selectorLine .selecttable li a{
+    padding: 0 30px;
+    line-height: 40px;
+}
+.selectorLine .selecttable .row2 a{
+    line-height: 35px;
+}
+.selectorLine .selecttable .more{
+    width: 60px;
+    border-right:none;
+}
+.selecttable .more a{
+    padding: 0 8px;
+    color: #c0a39b;
+}
+.list-main{
+    margin-top:20px
+}
+.list-main .list-left{
+    width: 208px;
+    /* height: 999px; */
+    border: 1px solid #e3e3e3;
+    border-top: 4px solid #ff8c4e;
+}
+.list-main .list-left .inner{
+    /* height: 999px; */
+width: 192px;
+border: 1px solid #e3e3e3;
+border-right: none;
+border-bottom: none;
+}
+.list-main .list-right{
+    width: 967px;
+    /* height: 999px; */
+}
+.list-main .inner h2{
+    font-size: 15px;
+    font-weight: bold;
+    margin: 15px 0 0 3px;
+    color: #f2610e;
+}
+.list-main .inner .img{
+    width: 190px;
+    text-align: center;
+    line-height: 175px;
+}
+.list-main .inner .name{
+line-height: 18px;
+}
+.list-main .inner .descript{
+    line-height: 21px;
+}
+.list-main .inner .price{
+    color: #f1842f;
+    font-weight: bold;
+    line-height: 21px;
+}  
+
+.list-right .title{
+    height: 43px;
+    background: #fcf7f4;
+}
+.list-right .title ul{
+    margin: 9px 0 0 6px;
+}
+.list-right .title li{
+    float:left;
+}
+.list-right .title li a{
+    display: inline-block;
+    padding: 0 15px;
+    line-height: 24px;
+    border: 1px solid #d8d8d8;
+}
+.list-right .title .first a{
+    color: #ff0015;
+}
+.list-right{
+    /* height: 999px; */
+    /* background: red; */
+}
+.list-right>.title>.fr {
+    line-height: 43px;
+}
+.list-right>.title>.fr span{
+    display: inline-block;
+    line-height: 24px;
+}
+.list-right>.title>.fr .page i{
+    display: inline-block;
+    transform:scale(0.6);
+    color:#bbb6b3;
+    vertical-align: -2px;
+}
+.list-right>.title>.fr .current{
+    color: #ee6f12;
+}
+.pro-list{
+
+}
+
+.pro-list li{
+    width: 233px;
+    height: 393px;
+    /* background: red; */
+    /* text-align: center; */
+    float: left;
+    border: 3px solid #fff;
+    margin-bottom: 30px;
+}
+
+.pro-list li:hover {
+    border: 3px solid #eb6e12;
+}
+.pro-list li:hover  .buy .fl i{
+    background: #eb6e12;
+    color: #fff;
+}
+
+
+
+.pro-list .pro-list-w{
+    width: 189px;
+    margin: 0 auto;
+}
+.pro-list li img{
+    width: 189px;
+    height: 120px;
+    margin: 85px 0 32px 0;
+}
+.pro-list li p{
+    line-height: 20px;
+}
+.pro-list li .slogan{
+    color: #df660d;
+}
+.pro-list li .num {
+    margin-top: 7px;
+}
+.pro-list li .num i{
+    color: #de4b05;
+}
+
+.pro-list li .price{
+    color: #f26e24;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: bold;
+}
+.pro-list-w .buy{
+    border: 1px solid #d8d8d8;
+    line-height: 28px;
+    margin-top: 18px;
+}
+.pro-list-w .buy .fl{
+    border-right: 1px solid  #d8d8d8;
+    width: 58%;
+    text-align: center;
+}
+.pro-list-w .buy .fr{
+    width: 39%;
+    text-align: center;
+}
+.pro-list-w .buy  i{
+    display: inline-block;
+    height: 28px;
+    float: left;
+    padding: 0 10px;
+}
+
+.page-main{
+    width: 300px;
+    height: 28px;
+    line-height: 28px;
+    margin: 0 auto;
+    /* background: red; */
+    margin-bottom: 83px;
+}
+.page-main li{
+    float: left;
+    width: 28px;
+    height: 28px;
+    border:1px solid #c4c4c4;
+    margin-right: 9px;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.page-main li a{
+    color:#c4c4c4 ;
+}
+
+.page-main span{
+    padding: 0 10px;
+    color:#c4c4c4 ;
+}
+.page-main .next{
+    display: inline-block;
+    height: 28px;
+    border:1px solid #c4c4c4;
+    padding: 0 15px;
+    color:#c4c4c4 ;
+}
+
+a:hover{
+    color: red !important;
+}
+li:hover{
+    color: red !important;
+}
+li:hover a{
+    color: red !important;
+}

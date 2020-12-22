@@ -1,0 +1,126 @@
+.w{
+    width: 1200px;
+    margin:0 auto;
+}
+.register-w{
+    width: 376px;
+    margin: 0 auto;
+}
+.header .w{
+    height: 108px;
+    font-size: 0;
+}
+.header .w h1{
+    line-height: 108px;
+    
+}
+.header .w span{
+    font-size:24px;
+    color:#666666;
+    margin-left: 45px;
+}
+
+
+
+.middle{
+    background: #f6f6f6;
+}
+.middle .w{
+    height: 554px;
+    background: #f6f6f6;
+    overflow: hidden;
+}
+.middle .register{
+    width: 750px;
+    height: 476px;
+    background: white;
+    border-top: 3px solid #f36b11;
+    margin: 0 auto;
+    margin-top: 34px;
+}
+.register-w h3{
+    line-height: 89px;
+    font-size: 24px;
+    text-align:center;
+}
+.register button{
+    width: 341px;
+    height: 45px;
+    border: none;
+    background: #f36b11;
+    border-radius: 5px;
+    color: white;
+}
+.register-w p{
+    color: #f36b11;
+    line-height: 44px;
+}
+.register-w>span{
+    display: block;
+    text-align: center;
+}
+.register-w>span>a{
+    color: #f36b11;
+    line-height: 93px;
+}
+
+input{
+    border: none;
+    line-height: 34px;
+}
+.usrename-box,.password-box{
+    height: 34px;
+    width: 376px;
+    border:1px solid #d9d9d9;
+}
+.usrename-box>div,.password-box>div{
+    width: 34px;
+    height: 34px;
+    background: #fef9f6;
+    border-right:1px solid #d9d9d9;
+    overflow: hidden;
+    float: left;
+}
+.usrename-box>div>i{
+    display: block;
+    width: 16px;
+    height: 12px;
+    background: url('../images/spirit.png') no-repeat 0 0;
+    margin: 0 auto;
+    margin-top: 11px;
+}
+.password-box>div>i{
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url('../images/spirit.png') no-repeat 0 -14px;
+    margin: 0 auto;
+    margin-top: 9px;
+}
+#username,#password{
+    width:338px;
+    height:34px;
+    float: left;
+}
+.test-box input{
+    width: 207px;
+    height: 34px;
+    border:1px solid #d9d9d9;
+}
+.test-box{
+    height: 34px;
+    width: 376px;
+}
+
+
+.footer .w{
+    height: 128px;
+}
+.footer p{
+    color: #636363;
+    text-align: center;
+    line-height: 27px;
+}
+.footer p:first-child{
+    margin-top: 39px;
+}

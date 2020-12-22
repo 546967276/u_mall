@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/addProduct.css">
+    <link rel="stylesheet" href="./css/iconfont/iconfont.css">
+</head>
+
+<body>
+
+    <div id='container' class="container">
+        <div class="w">
+            <div class="title">
+                <h2>小u商城后台管理系统</h2>
+            </div>
+
+            <h3 class="form-w">添加商品</h3>
+            <form class="form form-w" action="#" method="POST">
+                <p class="rect">
+                    
+                    <label for=""><i >*</i>商品名称</label>
+                    <input  type="text">
+                </p>
+                <p class="rect">
+                    
+                    <label for=""><i>*</i>简单描述</label>
+                    <input  type="text">
+                </p>
+                <p class="rect">
+                    
+                    <label for=""><i>*</i>关键字</label>
+                    <input type="text" placeholder="请用,分隔关键字">
+                </p>
+
+                <p class="pro-class">
+                    
+                    <label for=""><i>*</i>产品分类</label>
+                    
+                    <span >
+                        <input class="checkbox" type="checkbox">
+                        <i>新品发布</i>
+                    </span>
+                    <span >
+                        <input class="checkbox" type="checkbox">
+                        <i>限时促销</i>
+                    </span>
+                    <span>
+                        <input class="checkbox" type="checkbox">
+                        <i>特价处理</i>
+                    </span>
+                   
+                    <input  class="btn" type="button" value="添加分类">
+
+                </p>
+
+                <div class="price">
+                    <span>
+                        <p><i>*</i>商品原价:</p>
+                        <p><input type="text"><b>&nbsp元</b> </p>
+                    </span>
+                    <span>
+                        <p><i>*</i>商品现价:</p>
+                        <p><input type="text"><b>&nbsp元</b> </p>
+                    </span>
+                    <span>
+                        <p><i>*</i>商品数量:</p>
+                        <p><input type="text"><b>&nbsp元</b> </p>
+                    </span>
+                </div>
+
+                <p class="set-rule">
+                    <label for="">设置规格</label>
+                    <input type="text">
+                    <span>如“颜色.尺寸,型号“中间以英文逗号隔开</span>
+                </p>
+                <p class="confirm">
+                    <label for="">是否上架</label>
+                    <input type="checkbox"> <span>是</span>
+                    <input type="checkbox"> <span>否</span>
+                </p>
+                <p class="confirm">
+                    <label for="">是否上架</label>
+                    <input type="checkbox"> <span>是</span>
+                    <input type="checkbox"> <span>否</span>
+                </p>
+
+
+                <p class="pro-img">
+                    <label for=""> <i>*</i>产品图片:</label>
+                    <!-- <input type="file" value="选择文件"> <span>未选择文件</span> -->
+                    <input type="image" src='./images/images/btn_img_03.png' alt='上传文件'>
+                    <span>未选择任何文件</span>
+                </p>
+                <p class="text-descript">
+                    <label for=""> <i>*</i>内容介绍:</label>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </p>
+                <div class="submit-btn">
+                    <input type="submit" value="保存提交">
+                    <input type="submit" value="保存草稿">
+                    <input type="submit" value="取消添加">
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

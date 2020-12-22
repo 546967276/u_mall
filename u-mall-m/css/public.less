@@ -1,0 +1,124 @@
+@my-height: 1.2rem;
+@main-orange  : #f26b11;
+@w            : 7.05rem;
+@bpx-max-width: 7.5rem;
+.w {
+    width : @w;
+    margin: 0 auto;
+}
+@media screen and (width:320px) {
+    .scale_9{
+        transform-origin: 0;
+        transform: scale(0.9);
+    }
+    .scale_8{
+        transform-origin: 0;
+        transform: scale(0.8);
+    }
+    .scale_7{
+        transform-origin: 0;
+        transform: scale(0.7); 
+    }
+    .w100{
+        width: @bpx-max-width;
+    }
+
+}
+
+.container {
+    width     : @bpx-max-width;
+    // height: 10000000rem;
+    // background: #f1f1f1;
+    background: #fff;
+    margin: 0 auto; 
+    overflow: hidden;
+    // padding-bottom:  1.2rem;
+    padding-bottom: @my-height;
+    margin-top: .88rem;
+}
+
+.header {
+    background: @main-orange;
+    width: @bpx-max-width;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left:  calc((100% - @bpx-max-width ) / 2);
+    z-index: 100;
+    .w {
+        height         : .88rem;
+        display        : flex;
+        justify-content: space-between;
+        align-items    : center;
+
+
+        i{
+            display: block;
+            width  : 0px;
+            height : 0px;
+            border : transparent solid 0.13rem;
+            border-right:  white solid 0.13rem;
+            position: relative;
+         
+        }
+
+        i::after{
+            content: '';
+            display: block;
+            width  : 0px;
+            height : 0px;
+            border : transparent solid 0.13rem;
+            border-right:  @main-orange solid 0.13rem;
+            position: absolute;
+            left: -0.09rem;
+            top: -0.13rem;
+        }
+
+        >span{
+            margin-right: -.5rem;
+            font-size: .33rem;
+            color: #fff;
+        }
+        >div {
+            span {
+                display      : inline-block;
+                width        : .11rem;
+                height       : .11rem;
+                border-radius: 50%;
+                background   : #fff;
+                &:nth-of-type(n+2) {
+                    margin-left: .1rem;
+                }
+            }
+        }
+
+    }
+}
+.public-footer{
+    background-color: #fff;
+    padding: 0 .5rem;
+    width: @bpx-max-width - 1rem;
+    height: @my-height;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    border-top: 1px solid #ebebeb;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    margin-left: -(@bpx-max-width )/ 2;
+    font-size: .2rem;
+
+    img{
+        width: .52rem;
+        height: .52rem;
+    }
+    p{
+        margin-top: .13rem;
+        color: #939393;
+    }
+
+
+}
+
